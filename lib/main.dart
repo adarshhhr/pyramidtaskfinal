@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
                                 padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                                 child: Icon(Icons.check),
                               ),
-                              Text('Cabbage and Lettuce (2)')
+                              Text('Cabbage and Lettuce (1)')
                             ],
                           ),
                         ),
@@ -77,7 +77,7 @@ class MyApp extends StatelessWidget {
                             child: const Row(
                               children: [
                                 Icon(Icons.check),
-                                Text('Cucumber and Tomatoes(2)'),
+                                Text('Cucumber and Tomatoes(1)'),
                               ],
                             ),
                           ),
@@ -117,7 +117,7 @@ class MyApp extends StatelessWidget {
                             child: const Row(
                               children: [
                                 Icon(Icons.check),
-                                Text('Peppers(2)'),
+                                Text('Peppers(1)'),
                               ],
                             ),
                           ),
@@ -132,7 +132,7 @@ class MyApp extends StatelessWidget {
                             child: const Row(
                               children: [
                                 Icon(Icons.check),
-                                Text('Potatoes(2)'),
+                                Text('Potatoes(1)'),
                               ],
                             ),
                           ),
@@ -141,140 +141,891 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 160,
+                    height: 380,
                     child: ListView(
-                      padding: const EdgeInsets.all(8),
                       scrollDirection: Axis.vertical,
                       children: <Widget>[
-                        Row(
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                    color: Colors.purpleAccent, width: 0),
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              width: 177, // Set the desired width
-                              height: 128, // Set the desired height
-                              child: Column(
-                                children: [
-                                  Align(
-                                    alignment: Alignment.center,
-                                    child: Image.asset(
-                                      'images/Boston.png',
-                                      width: 177,
-                                      height: 128,
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(8, 8, 0,
+                              30), // You can adjust the padding as needed
+                          child: Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.purpleAccent,
+                                    width: 0,
+                                  ),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Align(
+                                      alignment: Alignment.center,
+                                      child: Image.asset(
+                                        'images/Boston.png',
+                                        width: 177,
+                                        height: 128,
+                                      ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.1),
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              width: 177,
-                              height: 128,
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.fromLTRB(
-                                        12,
-                                        8,
-                                        12,
-                                        8), // Left, Top, Right, Bottom padding
-                                    child: Container(
-                                        child: const Text(
-                                      'Boston Lettuce',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.indigo,
-                                          fontSize: 18),
-                                    )),
-                                  ),
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(26, 0, 12, 8),
-                                    child: Row(
-                                      children: [
-                                        Container(
-                                            child: const Text(
-                                          '1.10',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.indigo,
-                                              fontSize: 18),
-                                        )),
-                                        Container(
-                                            child: const Text(
-                                          '\$/piece',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.grey,
-                                              fontSize: 15),
-                                        )),
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    // Child 3
-                                    child: Padding(
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.1),
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Padding(
                                       padding: const EdgeInsets.fromLTRB(
-                                          27, 8, 12, 8),
+                                          12,
+                                          8,
+                                          12,
+                                          8), // Left, Top, Right, Bottom padding
+                                      child: Container(
+                                        child: const Text(
+                                          'Boston Lettuce',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.indigo,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          26, 0, 12, 8),
                                       child: Row(
                                         children: [
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10), // Add spacing here
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                  color: Colors.white,
-                                                  borderRadius:
-                                                      BorderRadius.circular(8),
-                                                  border: Border.all(
-                                                      color: Colors.black,
-                                                      width: 1)),
-                                              padding:
-                                                  const EdgeInsets.fromLTRB(
-                                                      15, 10, 15, 10),
-                                              child: const Icon(
-                                                Icons.favorite,
-                                                color: Colors.red,
-                                                size: 24,
+                                          Container(
+                                            child: const Text(
+                                              '1.10',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.indigo,
+                                                fontSize: 18,
                                               ),
                                             ),
                                           ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                right: 10), // Add spacing here
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                  color: Colors.green,
-                                                  borderRadius:
-                                                      BorderRadius.circular(8),
-                                                  border: Border.all(
-                                                      color: Colors.black,
-                                                      width: 1)),
-                                              padding:
-                                                  const EdgeInsets.fromLTRB(
-                                                      15, 10, 15, 10),
-                                              child: const Icon(
-                                                Icons.add_shopping_cart_sharp,
-                                                color: Colors.white,
-                                                size: 24,
+                                          Container(
+                                            child: const Text(
+                                              '\$/piece',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                                fontSize: 15,
                                               ),
                                             ),
                                           ),
                                         ],
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            27, 8, 12, 8),
+                                        child: Row(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.favorite,
+                                                  color: Colors.red,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.green,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.add_shopping_cart_sharp,
+                                                  color: Colors.white,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
-                            )
-                          ],
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(8, 8, 0,
+                              30), // You can adjust the padding as needed
+                          child: Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.purpleAccent,
+                                    width: 0,
+                                  ),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Align(
+                                      alignment: Alignment.center,
+                                      child: Image.asset(
+                                        'images/tomato.jpeg',
+                                        width: 177,
+                                        height: 128,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.1),
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          12,
+                                          8,
+                                          12,
+                                          8), // Left, Top, Right, Bottom padding
+                                      child: Container(
+                                        child: const Text(
+                                          'Cherry Tomato',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.indigo,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          26, 0, 12, 8),
+                                      child: Row(
+                                        children: [
+                                          Container(
+                                            child: const Text(
+                                              '1.0',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.indigo,
+                                                fontSize: 18,
+                                              ),
+                                            ),
+                                          ),
+                                          Container(
+                                            child: const Text(
+                                              '\$/piece',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                                fontSize: 15,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            27, 8, 12, 8),
+                                        child: Row(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.favorite,
+                                                  color: Colors.red,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.green,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.add_shopping_cart_sharp,
+                                                  color: Colors.white,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(8, 8, 0,
+                              30), // You can adjust the padding as needed
+                          child: Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.purpleAccent,
+                                    width: 0,
+                                  ),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Align(
+                                      alignment: Alignment.center,
+                                      child: Image.asset(
+                                        'images/Onion.jpeg',
+                                        width: 177,
+                                        height: 128,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.1),
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          12,
+                                          8,
+                                          12,
+                                          8), // Left, Top, Right, Bottom padding
+                                      child: Container(
+                                        child: const Text(
+                                          'Onion',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.indigo,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          26, 0, 12, 8),
+                                      child: Row(
+                                        children: [
+                                          Container(
+                                            child: const Text(
+                                              '0.90',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.indigo,
+                                                fontSize: 18,
+                                              ),
+                                            ),
+                                          ),
+                                          Container(
+                                            child: const Text(
+                                              '\$/piece',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                                fontSize: 15,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            27, 8, 12, 8),
+                                        child: Row(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.favorite,
+                                                  color: Colors.red,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.green,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.add_shopping_cart_sharp,
+                                                  color: Colors.white,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(8, 8, 0,
+                              30), // You can adjust the padding as needed
+                          child: Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.purpleAccent,
+                                    width: 0,
+                                  ),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Align(
+                                      alignment: Alignment.center,
+                                      child: Image.asset(
+                                        'images/garlic.jpeg',
+                                        width: 177,
+                                        height: 128,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.1),
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          12,
+                                          8,
+                                          12,
+                                          8), // Left, Top, Right, Bottom padding
+                                      child: Container(
+                                        child: const Text(
+                                          'Garlic',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.indigo,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          26, 0, 12, 8),
+                                      child: Row(
+                                        children: [
+                                          Container(
+                                            child: const Text(
+                                              '0.75',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.indigo,
+                                                fontSize: 18,
+                                              ),
+                                            ),
+                                          ),
+                                          Container(
+                                            child: const Text(
+                                              '\$/piece',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                                fontSize: 15,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            27, 8, 12, 8),
+                                        child: Row(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.favorite,
+                                                  color: Colors.red,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.green,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.add_shopping_cart_sharp,
+                                                  color: Colors.white,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(8, 8, 0,
+                              30), // You can adjust the padding as needed
+                          child: Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.purpleAccent,
+                                    width: 0,
+                                  ),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Align(
+                                      alignment: Alignment.center,
+                                      child: Image.asset(
+                                        'images/chilli.jpeg',
+                                        width: 177,
+                                        height: 128,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.1),
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          12,
+                                          8,
+                                          12,
+                                          8), // Left, Top, Right, Bottom padding
+                                      child: Container(
+                                        child: const Text(
+                                          'Red Chilli',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.indigo,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          26, 0, 12, 8),
+                                      child: Row(
+                                        children: [
+                                          Container(
+                                            child: const Text(
+                                              '1.20',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.indigo,
+                                                fontSize: 18,
+                                              ),
+                                            ),
+                                          ),
+                                          Container(
+                                            child: const Text(
+                                              '\$/piece',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                                fontSize: 15,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            27, 8, 12, 8),
+                                        child: Row(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.favorite,
+                                                  color: Colors.red,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.green,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.add_shopping_cart_sharp,
+                                                  color: Colors.white,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(8, 8, 0,
+                              30), // You can adjust the padding as needed
+                          child: Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.purpleAccent,
+                                    width: 0,
+                                  ),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Align(
+                                      alignment: Alignment.center,
+                                      child: Image.asset(
+                                        'images/potatoe.jpeg',
+                                        width: 177,
+                                        height: 128,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(0.1),
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                width: 177,
+                                height: 128,
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          12,
+                                          8,
+                                          12,
+                                          8), // Left, Top, Right, Bottom padding
+                                      child: Container(
+                                        child: const Text(
+                                          'Potato',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.indigo,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          26, 0, 12, 8),
+                                      child: Row(
+                                        children: [
+                                          Container(
+                                            child: const Text(
+                                              '1.50',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.indigo,
+                                                fontSize: 18,
+                                              ),
+                                            ),
+                                          ),
+                                          Container(
+                                            child: const Text(
+                                              '\$/piece',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.grey,
+                                                fontSize: 15,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.fromLTRB(
+                                            27, 8, 12, 8),
+                                        child: Row(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.favorite,
+                                                  color: Colors.red,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  right:
+                                                      10), // Add spacing here
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.green,
+                                                  borderRadius:
+                                                      BorderRadius.circular(8),
+                                                  border: Border.all(
+                                                    color: Colors.black,
+                                                    width: 1,
+                                                  ),
+                                                ),
+                                                padding:
+                                                    const EdgeInsets.fromLTRB(
+                                                        15, 10, 15, 10),
+                                                child: const Icon(
+                                                  Icons.add_shopping_cart_sharp,
+                                                  color: Colors.white,
+                                                  size: 24,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
@@ -282,26 +1033,33 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: Container(
+                color: const Color.fromRGBO(246, 245, 245, 1).withOpacity(0.5),
+                child: BottomNavigationBar(
+                  items: <BottomNavigationBarItem>[
+                    BottomNavigationBarItem(
+                      icon: Image.asset('images/tab2,3.png'),
+                      label: '',
+                    ),
+                    BottomNavigationBarItem(
+                      icon: Image.asset('images/tab2,3.png'),
+                      label: '',
+                    ),
+                    BottomNavigationBarItem(
+                      icon: Image.asset('images/tab2,3.png'),
+                      label: '',
+                    ),
+                  ],
+                  selectedItemColor: Colors.blue,
+                  unselectedItemColor: Colors.grey,
+                ),
+              ),
+            ),
           ],
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: const Color.fromRGBO(246, 245, 245, 0.7),
-          items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Image.asset('images/tab2,3.png'),
-              label: '',
-            ),
-            BottomNavigationBarItem(
-              icon: Image.asset('images/tab2,3.png'),
-              label: '',
-            ),
-            BottomNavigationBarItem(
-              icon: Image.asset('images/tab2,3.png'),
-              label: '',
-            ),
-          ],
-          selectedItemColor: Colors.blue,
-          unselectedItemColor: Colors.grey,
         ),
       ),
     );
