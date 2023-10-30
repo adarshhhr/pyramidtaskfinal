@@ -1,4 +1,3 @@
-![Screenshot_1698691649](https://github.com/adarshhhr/pyramidtaskfinal/assets/122380219/4ac172ac-3fb4-4f3f-a971-31bba963107b)# Grocery App UI Interface
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
