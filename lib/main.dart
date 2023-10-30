@@ -1,8 +1,19 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool is1pressed1 = false;
+  bool is1pressed2 = false;
+  bool is1pressed3 = false;
+  bool is1pressed4 = false;
+  bool is1pressed5 = false;
+  bool is1pressed6 = false;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -238,23 +249,37 @@ class MyApp extends StatelessWidget {
                                               padding: const EdgeInsets.only(
                                                   right:
                                                       10), // Add spacing here
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.white,
-                                                  borderRadius:
-                                                      BorderRadius.circular(8),
-                                                  border: Border.all(
-                                                    color: Colors.black,
-                                                    width: 1,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  setState(() {
+                                                    is1pressed1 = !is1pressed1;
+                                                  });
+                                                },
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8),
+                                                    border: Border.all(
+                                                      color: Colors.black,
+                                                      width: 1,
+                                                    ),
                                                   ),
-                                                ),
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        15, 10, 15, 10),
-                                                child: const Icon(
-                                                  Icons.favorite,
-                                                  color: Colors.red,
-                                                  size: 24,
+                                                  padding:
+                                                      const EdgeInsets.fromLTRB(
+                                                          15, 10, 15, 10),
+                                                  child: is1pressed1
+                                                      ? const Icon(
+                                                          Icons.favorite,
+                                                          color: Colors.red,
+                                                          size: 24,
+                                                        )
+                                                      : const Icon(
+                                                          Icons
+                                                              .favorite_border_outlined,
+                                                          size: 24,
+                                                        ),
                                                 ),
                                               ),
                                             ),
@@ -313,7 +338,7 @@ class MyApp extends StatelessWidget {
                                     Align(
                                       alignment: Alignment.center,
                                       child: Image.asset(
-                                        'images/tomato.jpeg',
+                                        'images/tomato.jpg',
                                         width: 177,
                                         height: 128,
                                       ),
@@ -385,23 +410,37 @@ class MyApp extends StatelessWidget {
                                               padding: const EdgeInsets.only(
                                                   right:
                                                       10), // Add spacing here
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.white,
-                                                  borderRadius:
-                                                      BorderRadius.circular(8),
-                                                  border: Border.all(
-                                                    color: Colors.black,
-                                                    width: 1,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  setState(() {
+                                                    is1pressed2 = !is1pressed2;
+                                                  });
+                                                },
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8),
+                                                    border: Border.all(
+                                                      color: Colors.black,
+                                                      width: 1,
+                                                    ),
                                                   ),
-                                                ),
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        15, 10, 15, 10),
-                                                child: const Icon(
-                                                  Icons.favorite,
-                                                  color: Colors.red,
-                                                  size: 24,
+                                                  padding:
+                                                      const EdgeInsets.fromLTRB(
+                                                          15, 10, 15, 10),
+                                                  child: is1pressed2
+                                                      ? const Icon(
+                                                          Icons.favorite,
+                                                          color: Colors.red,
+                                                          size: 24,
+                                                        )
+                                                      : const Icon(
+                                                          Icons
+                                                              .favorite_border_outlined,
+                                                          size: 24,
+                                                        ),
                                                 ),
                                               ),
                                             ),
@@ -460,7 +499,7 @@ class MyApp extends StatelessWidget {
                                     Align(
                                       alignment: Alignment.center,
                                       child: Image.asset(
-                                        'images/Onion.jpeg',
+                                        'images/onion.jpg',
                                         width: 177,
                                         height: 128,
                                       ),
@@ -532,23 +571,37 @@ class MyApp extends StatelessWidget {
                                               padding: const EdgeInsets.only(
                                                   right:
                                                       10), // Add spacing here
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.white,
-                                                  borderRadius:
-                                                      BorderRadius.circular(8),
-                                                  border: Border.all(
-                                                    color: Colors.black,
-                                                    width: 1,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  setState(() {
+                                                    is1pressed3 = !is1pressed3;
+                                                  });
+                                                },
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8),
+                                                    border: Border.all(
+                                                      color: Colors.black,
+                                                      width: 1,
+                                                    ),
                                                   ),
-                                                ),
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        15, 10, 15, 10),
-                                                child: const Icon(
-                                                  Icons.favorite,
-                                                  color: Colors.red,
-                                                  size: 24,
+                                                  padding:
+                                                      const EdgeInsets.fromLTRB(
+                                                          15, 10, 15, 10),
+                                                  child: is1pressed3
+                                                      ? const Icon(
+                                                          Icons.favorite,
+                                                          color: Colors.red,
+                                                          size: 24,
+                                                        )
+                                                      : const Icon(
+                                                          Icons
+                                                              .favorite_border_outlined,
+                                                          size: 24,
+                                                        ),
                                                 ),
                                               ),
                                             ),
@@ -607,7 +660,7 @@ class MyApp extends StatelessWidget {
                                     Align(
                                       alignment: Alignment.center,
                                       child: Image.asset(
-                                        'images/garlic.jpeg',
+                                        'images/garlic.jpg',
                                         width: 177,
                                         height: 128,
                                       ),
@@ -679,23 +732,37 @@ class MyApp extends StatelessWidget {
                                               padding: const EdgeInsets.only(
                                                   right:
                                                       10), // Add spacing here
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.white,
-                                                  borderRadius:
-                                                      BorderRadius.circular(8),
-                                                  border: Border.all(
-                                                    color: Colors.black,
-                                                    width: 1,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  setState(() {
+                                                    is1pressed4 = !is1pressed4;
+                                                  });
+                                                },
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8),
+                                                    border: Border.all(
+                                                      color: Colors.black,
+                                                      width: 1,
+                                                    ),
                                                   ),
-                                                ),
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        15, 10, 15, 10),
-                                                child: const Icon(
-                                                  Icons.favorite,
-                                                  color: Colors.red,
-                                                  size: 24,
+                                                  padding:
+                                                      const EdgeInsets.fromLTRB(
+                                                          15, 10, 15, 10),
+                                                  child: is1pressed4
+                                                      ? const Icon(
+                                                          Icons.favorite,
+                                                          color: Colors.red,
+                                                          size: 24,
+                                                        )
+                                                      : const Icon(
+                                                          Icons
+                                                              .favorite_border_outlined,
+                                                          size: 24,
+                                                        ),
                                                 ),
                                               ),
                                             ),
@@ -754,7 +821,7 @@ class MyApp extends StatelessWidget {
                                     Align(
                                       alignment: Alignment.center,
                                       child: Image.asset(
-                                        'images/chilli.jpeg',
+                                        'images/chilli.jpg',
                                         width: 177,
                                         height: 128,
                                       ),
@@ -826,23 +893,37 @@ class MyApp extends StatelessWidget {
                                               padding: const EdgeInsets.only(
                                                   right:
                                                       10), // Add spacing here
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.white,
-                                                  borderRadius:
-                                                      BorderRadius.circular(8),
-                                                  border: Border.all(
-                                                    color: Colors.black,
-                                                    width: 1,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  setState(() {
+                                                    is1pressed5 = !is1pressed5;
+                                                  });
+                                                },
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8),
+                                                    border: Border.all(
+                                                      color: Colors.black,
+                                                      width: 1,
+                                                    ),
                                                   ),
-                                                ),
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        15, 10, 15, 10),
-                                                child: const Icon(
-                                                  Icons.favorite,
-                                                  color: Colors.red,
-                                                  size: 24,
+                                                  padding:
+                                                      const EdgeInsets.fromLTRB(
+                                                          15, 10, 15, 10),
+                                                  child: is1pressed5
+                                                      ? const Icon(
+                                                          Icons.favorite,
+                                                          color: Colors.red,
+                                                          size: 24,
+                                                        )
+                                                      : const Icon(
+                                                          Icons
+                                                              .favorite_border_outlined,
+                                                          size: 24,
+                                                        ),
                                                 ),
                                               ),
                                             ),
@@ -901,7 +982,7 @@ class MyApp extends StatelessWidget {
                                     Align(
                                       alignment: Alignment.center,
                                       child: Image.asset(
-                                        'images/potatoe.jpeg',
+                                        'images/potato.jpg',
                                         width: 177,
                                         height: 128,
                                       ),
@@ -973,23 +1054,37 @@ class MyApp extends StatelessWidget {
                                               padding: const EdgeInsets.only(
                                                   right:
                                                       10), // Add spacing here
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.white,
-                                                  borderRadius:
-                                                      BorderRadius.circular(8),
-                                                  border: Border.all(
-                                                    color: Colors.black,
-                                                    width: 1,
+                                              child: GestureDetector(
+                                                onTap: () {
+                                                  setState(() {
+                                                    is1pressed6 = !is1pressed6;
+                                                  });
+                                                },
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8),
+                                                    border: Border.all(
+                                                      color: Colors.black,
+                                                      width: 1,
+                                                    ),
                                                   ),
-                                                ),
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                        15, 10, 15, 10),
-                                                child: const Icon(
-                                                  Icons.favorite,
-                                                  color: Colors.red,
-                                                  size: 24,
+                                                  padding:
+                                                      const EdgeInsets.fromLTRB(
+                                                          15, 10, 15, 10),
+                                                  child: is1pressed6
+                                                      ? const Icon(
+                                                          Icons.favorite,
+                                                          color: Colors.red,
+                                                          size: 24,
+                                                        )
+                                                      : const Icon(
+                                                          Icons
+                                                              .favorite_border_outlined,
+                                                          size: 24,
+                                                        ),
                                                 ),
                                               ),
                                             ),
@@ -1069,5 +1164,5 @@ class MyApp extends StatelessWidget {
 }
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
