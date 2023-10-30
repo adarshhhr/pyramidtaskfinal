@@ -1027,9 +1027,10 @@ class MyApp extends StatelessWidget {
                             ],
                           ),
                         ),
+                        SizedBox(height: 50)
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -1037,9 +1038,10 @@ class MyApp extends StatelessWidget {
               left: 0,
               right: 0,
               bottom: 0,
+              top: null,
               child: Container(
-                color: const Color.fromRGBO(246, 245, 245, 1).withOpacity(0.5),
                 child: BottomNavigationBar(
+                  backgroundColor: Color.fromRGBO(255, 255, 255, 0.9),
                   items: <BottomNavigationBarItem>[
                     BottomNavigationBarItem(
                       icon: Image.asset('images/tab2,3.png'),
